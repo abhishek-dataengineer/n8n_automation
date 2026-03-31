@@ -1,0 +1,78 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## For all the shortcuts\n**Double click** to edit me. \n\n[Shortcuts Link](https://docs.n8n.io/keyboard-shortcuts/)"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -16,
+        -128
+      ],
+      "typeVersion": 1,
+      "id": "b2c6b2b2-845f-472e-87e5-7c3dc48fcfc3",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        128
+      ],
+      "id": "db603ea8-621b-4db3-99c7-47eeb06900d2",
+      "name": "My Manual Trigger"
+    },
+    {
+      "parameters": {
+        "sendTo": "sakshisingh19punam@gmail.com",
+        "subject": "Hello from n8n learning tutorial",
+        "message": "=Hey, \nHow are you doing today? \nIt seems like you want to master the n8n tool.",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        208,
+        128
+      ],
+      "id": "a763fa0a-7c8c-4a11-bb9c-a07cd2971aa2",
+      "name": "Send a test email",
+      "webhookId": "bc7d3949-c5c2-442c-aa03-6f256e4da42b",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "jcDN33SQy9Ll3uxS",
+          "name": "Gmail OAuth2 API"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "My Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "Send a test email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "45b712bf-5de9-4115-bb6e-cdf42f44e6e2",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "d4735bece3de0b5a8557e8ca4ca657084386378b54fdcabe8c68c3447287b6c2"
+  },
+  "id": "KmunrEy22IodCtV9",
+  "tags": []
+}
