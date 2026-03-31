@@ -2,7 +2,8 @@
 
 ### 1.) Basic Foundation Automation:
 ===================================
-  ###### 1.1) Basics -> My workflow.json:
+  ###### 1.1) Basics - My workflow
+  ---------------------------------
 
 <img width="2152" height="898" alt="image" src="https://github.com/user-attachments/assets/ef4c4970-618e-4e14-9595-8fa290871a4c" />
 
